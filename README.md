@@ -36,3 +36,72 @@
     </div>
 </body>
 </html>
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    opacity: 0.6;
+    cursor: default;
+}
+function registerHotel() {
+    // Get input values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var checkin = document.getElementById('checkin').value;
+    var checkout = document.getElementById('checkout').value;
+
+    // Perform validation or further logic if needed
+    console.log('Name: ' + name);
+    console.log('Email: ' + email);
+    console.log('Phone: ' + phone);
+    console.log('Check-in: ' + checkin);
+    console.log('Check-out: ' + checkout);
+
+    // Show success message or perform other actions
+    alert('Hotel registration successful!');
+}
+
